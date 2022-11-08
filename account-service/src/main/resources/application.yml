@@ -1,0 +1,64 @@
+spring:
+  application:
+    name: account-service
+  cloud:
+
+      nacos:
+        discovery:
+          server-addr: 127.0.0.1:8848
+
+      consul:
+        token:
+        host: localhost
+        port: 8500
+        discovery:
+          instance-id: "m-${spring.cloud.client.hostname}:${spring.application.name}:${server.port}"
+          fail-fast: false
+          acl-token: 7e56e9e1-e1b8-bb13-0748-cd0d29357c06
+        config:
+          fail-fast: false
+          acl-token: 7e56e9e1-e1b8-bb13-0748-cd0d29357c06
+
+      edas:
+         migration:
+            subscribes: consul,nacos,eureka
+            registry:
+              excludes:
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
+ribbon:
+  nacos:
+    enabled: true
+
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+
+management:
+  health:
+    consul:
+      enabled: false
+
+
+---
+spring:
+  profiles: zone1
+  cloud:
+    consul:
+      discovery:
+        instanceZone: zone1
+
+---
+spring:
+  profiles: zone2
+  cloud:
+    consul:
+      discovery:
+        instanceZone: zone2

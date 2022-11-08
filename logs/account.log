@@ -1,0 +1,1295 @@
+21:52:29.310 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$2ed34b6a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:29.384 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5529b642] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:30.779 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+21:52:30.912 INFO  No active profile set, falling back to default profiles: default
+21:52:32.363 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+21:52:32.704 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+21:52:35.097 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+21:52:39.382 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+21:52:40.425 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+21:52:40.441 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+21:52:40.454 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+21:52:41.007 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$2ed34b6a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:41.781 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:41.801 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:41.848 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:41.874 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:41.889 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:41.908 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:42.072 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5529b642] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:52:43.232 INFO  Tomcat initialized with port(s): 54216 (http)
+21:52:43.265 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+21:52:43.266 INFO  Starting service [Tomcat]
+21:52:43.267 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+21:52:43.472 INFO  Initializing Spring embedded WebApplicationContext
+21:52:43.472 INFO  Root WebApplicationContext: initialization completed in 12527 ms
+21:52:43.920 WARN  No URLs will be polled as dynamic configuration sources.
+21:52:43.921 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:52:43.940 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@413eaf5d
+21:52:45.063 INFO  Initializing ExecutorService 'taskScheduler'
+21:52:45.867 DEBUG Filter 'requestLoggingFilter' configured for use
+21:52:45.921 WARN  No URLs will be polled as dynamic configuration sources.
+21:52:45.921 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:52:46.445 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+21:52:47.102 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+21:52:53.167 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+21:52:53.173 INFO  Shutting down ExecutorService 'taskScheduler'
+21:52:53.189 INFO  Stopping service [Tomcat]
+21:52:53.206 WARN  The web application [ROOT] appears to have started a thread named [logback-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+21:52:53.208 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+21:52:53.209 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+21:52:53.433 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:52:54.806 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+21:52:54.810 WARN  [NotifyCenter] Start destroying Publisher
+21:52:54.817 WARN  [NotifyCenter] Destruction of the end
+21:52:54.817 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+21:52:54.818 WARN  [HttpClientBeanHolder] Destruction of the end
+21:56:31.132 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$a5dbe93a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:31.153 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cc325412] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:33.230 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+21:56:33.868 INFO  No active profile set, falling back to default profiles: default
+21:56:35.990 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+21:56:36.094 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+21:56:36.573 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+21:56:37.010 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+21:56:37.125 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+21:56:37.134 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+21:56:37.144 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+21:56:37.211 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$a5dbe93a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:37.657 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:37.672 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:37.722 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:37.749 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:37.764 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:37.775 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:37.832 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cc325412] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:56:38.380 INFO  Tomcat initialized with port(s): 54216 (http)
+21:56:38.393 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+21:56:38.394 INFO  Starting service [Tomcat]
+21:56:38.394 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+21:56:38.507 INFO  Initializing Spring embedded WebApplicationContext
+21:56:38.508 INFO  Root WebApplicationContext: initialization completed in 4550 ms
+21:56:40.314 WARN  No URLs will be polled as dynamic configuration sources.
+21:56:40.318 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:56:40.435 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@37f41a81
+21:56:42.576 INFO  Initializing ExecutorService 'taskScheduler'
+21:56:43.318 DEBUG Filter 'requestLoggingFilter' configured for use
+21:56:43.392 WARN  No URLs will be polled as dynamic configuration sources.
+21:56:43.392 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:56:43.784 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+21:56:45.106 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+21:56:51.145 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+21:56:51.161 INFO  Shutting down ExecutorService 'taskScheduler'
+21:56:51.167 INFO  Stopping service [Tomcat]
+21:56:51.174 WARN  The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+21:56:51.175 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+21:56:51.175 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+21:56:51.200 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:56:53.360 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+21:56:53.362 WARN  [NotifyCenter] Start destroying Publisher
+21:56:53.364 WARN  [NotifyCenter] Destruction of the end
+21:56:53.364 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+21:56:53.366 WARN  [HttpClientBeanHolder] Destruction of the end
+21:57:30.253 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$cb595e57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:30.260 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f1afc92f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:31.337 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+21:57:31.424 INFO  No active profile set, falling back to default profiles: default
+21:57:32.295 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+21:57:32.435 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+21:57:33.077 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+21:57:33.822 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+21:57:33.937 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+21:57:33.943 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+21:57:33.948 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+21:57:33.991 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$cb595e57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:34.247 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:34.259 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:34.347 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:34.398 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:34.419 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:34.428 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:34.567 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f1afc92f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:57:35.047 INFO  Tomcat initialized with port(s): 54216 (http)
+21:57:35.058 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+21:57:35.059 INFO  Starting service [Tomcat]
+21:57:35.060 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+21:57:35.180 INFO  Initializing Spring embedded WebApplicationContext
+21:57:35.180 INFO  Root WebApplicationContext: initialization completed in 3739 ms
+21:57:35.365 WARN  No URLs will be polled as dynamic configuration sources.
+21:57:35.365 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:57:35.377 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7fb82f73
+21:57:36.342 INFO  Initializing ExecutorService 'taskScheduler'
+21:57:36.907 DEBUG Filter 'requestLoggingFilter' configured for use
+21:57:36.950 WARN  No URLs will be polled as dynamic configuration sources.
+21:57:36.950 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:57:37.147 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+21:57:37.457 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+21:57:43.487 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+21:57:43.521 INFO  Shutting down ExecutorService 'taskScheduler'
+21:57:43.533 INFO  Stopping service [Tomcat]
+21:57:43.565 WARN  The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+21:57:43.568 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+21:57:43.597 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+21:57:43.646 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:57:45.635 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+21:57:45.637 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+21:57:45.637 WARN  [NotifyCenter] Start destroying Publisher
+21:57:45.639 WARN  [NotifyCenter] Destruction of the end
+21:57:45.639 WARN  [HttpClientBeanHolder] Destruction of the end
+21:58:39.651 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$86febed0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:39.659 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ad5529a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:40.766 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+21:58:40.858 INFO  No active profile set, falling back to default profiles: default
+21:58:41.981 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+21:58:42.662 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+21:58:44.640 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+21:58:47.020 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+21:58:47.532 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+21:58:47.540 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+21:58:47.546 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+21:58:47.677 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$86febed0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:49.056 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:49.106 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:49.330 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:49.451 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:49.527 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:49.567 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:49.845 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ad5529a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:58:51.446 INFO  Tomcat initialized with port(s): 54216 (http)
+21:58:51.472 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+21:58:51.473 INFO  Starting service [Tomcat]
+21:58:51.474 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+21:58:51.768 INFO  Initializing Spring embedded WebApplicationContext
+21:58:51.770 INFO  Root WebApplicationContext: initialization completed in 10840 ms
+21:58:52.506 WARN  No URLs will be polled as dynamic configuration sources.
+21:58:52.509 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:58:52.556 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1c792107
+21:58:55.170 INFO  Initializing ExecutorService 'taskScheduler'
+21:58:55.733 DEBUG Filter 'requestLoggingFilter' configured for use
+21:58:55.775 WARN  No URLs will be polled as dynamic configuration sources.
+21:58:55.775 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:58:56.067 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+21:58:56.490 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+21:59:02.513 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+21:59:02.516 INFO  Shutting down ExecutorService 'taskScheduler'
+21:59:02.521 INFO  Stopping service [Tomcat]
+21:59:02.527 WARN  The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+21:59:02.528 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+21:59:02.529 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+21:59:02.555 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:59:02.933 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+21:59:02.935 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+21:59:02.937 WARN  [NotifyCenter] Start destroying Publisher
+21:59:02.937 WARN  [NotifyCenter] Destruction of the end
+21:59:02.937 WARN  [HttpClientBeanHolder] Destruction of the end
+22:01:07.356 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$74e74410] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:07.362 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9b3daee8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:08.036 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:01:08.086 INFO  No active profile set, falling back to default profiles: default
+22:01:10.083 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:01:10.431 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:01:11.251 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:01:12.340 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+22:01:12.795 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:01:12.855 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:01:12.870 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:01:13.086 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$74e74410] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:13.471 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:13.479 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:13.516 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:13.537 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:13.556 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:13.567 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:13.626 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9b3daee8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:14.448 INFO  Tomcat initialized with port(s): 54216 (http)
+22:01:14.459 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:01:14.459 INFO  Starting service [Tomcat]
+22:01:14.460 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:01:14.554 INFO  Initializing Spring embedded WebApplicationContext
+22:01:14.554 INFO  Root WebApplicationContext: initialization completed in 6449 ms
+22:01:14.802 WARN  No URLs will be polled as dynamic configuration sources.
+22:01:14.802 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:01:14.813 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@71e7c13f
+22:01:15.627 INFO  Initializing ExecutorService 'taskScheduler'
+22:01:16.205 DEBUG Filter 'requestLoggingFilter' configured for use
+22:01:16.255 WARN  No URLs will be polled as dynamic configuration sources.
+22:01:16.255 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:01:16.509 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:01:16.891 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+22:01:22.936 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:01:22.940 INFO  Shutting down ExecutorService 'taskScheduler'
+22:01:22.946 INFO  Stopping service [Tomcat]
+22:01:22.953 WARN  The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:01:22.954 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+22:01:22.955 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+22:01:22.992 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:01:24.030 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+22:01:24.038 WARN  [NotifyCenter] Start destroying Publisher
+22:01:24.041 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+22:01:24.046 WARN  [NotifyCenter] Destruction of the end
+22:01:24.051 WARN  [HttpClientBeanHolder] Destruction of the end
+22:06:13.622 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$ad2ea28a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:13.631 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d3850d62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:16.345 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:06:16.443 INFO  No active profile set, falling back to default profiles: default
+22:06:17.846 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:06:18.128 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:06:18.640 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:06:19.963 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+22:06:21.447 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:06:21.471 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:06:21.541 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:06:24.267 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$ad2ea28a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:26.370 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:26.583 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:27.228 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:27.569 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:27.761 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:27.920 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:29.466 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d3850d62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:06:36.676 INFO  Tomcat initialized with port(s): 54216 (http)
+22:06:36.778 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:06:36.780 INFO  Starting service [Tomcat]
+22:06:36.781 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:06:38.241 INFO  Initializing Spring embedded WebApplicationContext
+22:06:38.241 INFO  Root WebApplicationContext: initialization completed in 21741 ms
+22:06:40.973 WARN  No URLs will be polled as dynamic configuration sources.
+22:06:40.973 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:06:41.059 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@351ede23
+22:07:01.818 INFO  Initializing ExecutorService 'taskScheduler'
+22:07:25.518 DEBUG Filter 'requestLoggingFilter' configured for use
+22:07:26.584 WARN  No URLs will be polled as dynamic configuration sources.
+22:07:26.584 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:07:30.829 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:07:38.026 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+22:07:41.078 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:07:41.114 INFO  Shutting down ExecutorService 'taskScheduler'
+22:07:41.153 INFO  Stopping service [Tomcat]
+22:07:41.170 WARN  The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:07:41.172 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+22:07:41.173 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+22:07:41.175 WARN  The web application [ROOT] appears to have started a thread named [logback-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:07:42.008 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:07:45.162 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+22:07:45.171 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+22:07:45.171 WARN  [NotifyCenter] Start destroying Publisher
+22:07:45.177 WARN  [NotifyCenter] Destruction of the end
+22:07:45.184 WARN  [HttpClientBeanHolder] Destruction of the end
+22:10:13.360 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$de981167] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:13.366 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ee7c3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:13.987 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:10:14.049 INFO  No active profile set, falling back to default profiles: default
+22:10:14.800 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:10:14.894 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:10:15.260 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:10:16.427 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+22:10:19.997 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:10:20.075 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:10:20.128 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:10:20.940 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$de981167] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:22.492 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:22.566 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:23.081 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:23.348 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:23.601 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:23.667 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:24.692 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ee7c3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:31.852 INFO  Tomcat initialized with port(s): 54216 (http)
+22:10:31.913 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:10:31.915 INFO  Starting service [Tomcat]
+22:10:31.916 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:10:34.369 INFO  Initializing Spring embedded WebApplicationContext
+22:10:34.370 INFO  Root WebApplicationContext: initialization completed in 20275 ms
+22:10:37.203 WARN  No URLs will be polled as dynamic configuration sources.
+22:10:37.203 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:10:37.265 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@fceab5d
+22:10:57.235 INFO  Initializing ExecutorService 'taskScheduler'
+22:11:08.797 DEBUG Filter 'requestLoggingFilter' configured for use
+22:11:10.521 WARN  No URLs will be polled as dynamic configuration sources.
+22:11:10.522 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:11:17.026 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:12:36.449 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+22:12:39.519 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:12:39.542 INFO  Shutting down ExecutorService 'taskScheduler'
+22:12:39.596 INFO  Stopping service [Tomcat]
+22:12:39.618 WARN  The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:12:39.619 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+22:12:39.622 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+22:12:39.624 WARN  The web application [ROOT] appears to have started a thread named [logback-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:12:39.627 WARN  The web application [ROOT] appears to have started a thread named [logback-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:12:39.629 WARN  The web application [ROOT] appears to have started a thread named [logback-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:12:40.116 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:12:44.331 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+22:12:44.361 WARN  [NotifyCenter] Start destroying Publisher
+22:12:44.371 WARN  [NotifyCenter] Destruction of the end
+22:12:44.382 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+22:12:44.417 WARN  [HttpClientBeanHolder] Destruction of the end
+22:16:57.432 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$ba9398bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:16:57.444 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e0ea0397] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:17:57.813 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:17:57.899 INFO  No active profile set, falling back to default profiles: default
+22:17:58.921 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:17:59.106 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:17:59.699 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:18:01.686 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+22:18:03.614 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:18:03.640 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:18:03.671 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:18:04.540 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$ba9398bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:18:06.160 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:18:06.230 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:18:06.759 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:18:07.060 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:18:07.220 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:18:07.289 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:18:08.233 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e0ea0397] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:18:14.927 INFO  Tomcat initialized with port(s): 54216 (http)
+22:18:15.036 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:18:15.040 INFO  Starting service [Tomcat]
+22:18:15.041 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:18:16.364 INFO  Initializing Spring embedded WebApplicationContext
+22:18:16.364 INFO  Root WebApplicationContext: initialization completed in 18446 ms
+22:18:18.634 WARN  No URLs will be polled as dynamic configuration sources.
+22:18:18.634 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:18:18.697 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@295d54d6
+22:18:35.355 INFO  Initializing ExecutorService 'taskScheduler'
+22:18:50.055 DEBUG Filter 'requestLoggingFilter' configured for use
+22:18:51.594 WARN  No URLs will be polled as dynamic configuration sources.
+22:18:51.594 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:18:55.610 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:22:43.496 WARN  [NotifyCenter] Start destroying Publisher
+22:22:43.499 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+22:22:43.504 WARN  [NotifyCenter] Destruction of the end
+22:22:43.504 WARN  [HttpClientBeanHolder] Destruction of the end
+22:23:15.122 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$f7ce269f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:15.137 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1e249177] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:27.310 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:23:27.385 INFO  No active profile set, falling back to default profiles: default
+22:23:29.265 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:23:29.482 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:23:30.304 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:23:32.840 INFO  BeanFactory id=8811defe-75f3-3d1b-bb32-10feeb82e68e
+22:23:35.174 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:23:35.207 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:23:35.259 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:23:36.256 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$f7ce269f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:38.337 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:38.409 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:38.893 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:39.102 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:39.413 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:39.521 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:40.762 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1e249177] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:23:46.957 INFO  Tomcat initialized with port(s): 54216 (http)
+22:23:47.037 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:23:47.039 INFO  Starting service [Tomcat]
+22:23:47.040 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:23:48.879 INFO  Initializing Spring embedded WebApplicationContext
+22:23:48.879 INFO  Root WebApplicationContext: initialization completed in 21466 ms
+22:23:51.270 WARN  No URLs will be polled as dynamic configuration sources.
+22:23:51.271 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:23:51.349 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@c190cfc
+22:24:06.032 INFO  Initializing ExecutorService 'taskScheduler'
+22:24:29.959 DEBUG Filter 'requestLoggingFilter' configured for use
+22:24:33.127 WARN  No URLs will be polled as dynamic configuration sources.
+22:24:33.130 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:24:39.635 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:24:55.526 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+22:24:58.568 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:24:58.587 INFO  Shutting down ExecutorService 'taskScheduler'
+22:24:58.626 INFO  Stopping service [Tomcat]
+22:24:58.642 WARN  The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:24:58.643 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+22:24:58.645 WARN  The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+22:24:58.646 WARN  The web application [ROOT] appears to have started a thread named [logback-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:24:58.648 WARN  The web application [ROOT] appears to have started a thread named [logback-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+22:24:59.632 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:25:05.790 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+22:25:05.801 WARN  [HttpClientBeanHolder] Start destroying common HttpClient
+22:25:05.802 WARN  [NotifyCenter] Start destroying Publisher
+22:25:05.804 WARN  [NotifyCenter] Destruction of the end
+22:25:05.807 WARN  [HttpClientBeanHolder] Destruction of the end
+22:26:13.078 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$fef372c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:13.084 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2549dd9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:13.715 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:26:13.778 INFO  No active profile set, falling back to default profiles: default
+22:26:14.521 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:26:14.613 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:26:15.008 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:26:16.292 INFO  BeanFactory id=7f64aea4-8ebe-3f32-a10a-19f23b159619
+22:26:17.998 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:26:18.038 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:26:18.092 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:26:18.951 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$fef372c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:20.517 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:20.588 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:21.142 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:21.336 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:21.506 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:21.563 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:22.523 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2549dd9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:26:29.931 INFO  Tomcat initialized with port(s): 54216 (http)
+22:26:30.678 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:26:30.689 INFO  Starting service [Tomcat]
+22:26:30.724 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:26:34.931 INFO  Initializing Spring embedded WebApplicationContext
+22:26:34.931 INFO  Root WebApplicationContext: initialization completed in 21136 ms
+22:26:42.108 WARN  No URLs will be polled as dynamic configuration sources.
+22:26:42.109 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:26:42.187 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4f541e67
+22:26:54.991 INFO  Initializing ExecutorService 'taskScheduler'
+22:27:06.106 DEBUG Filter 'requestLoggingFilter' configured for use
+22:27:06.846 WARN  No URLs will be polled as dynamic configuration sources.
+22:27:06.849 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:27:11.169 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:27:17.743 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.alibaba.edas.registry.exclude.RegistrySwitcher': Unsatisfied dependency expressed through field 'registrations'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.util.List<org.springframework.cloud.client.serviceregistry.Registration>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+22:27:17.755 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:27:17.777 INFO  Shutting down ExecutorService 'taskScheduler'
+22:27:17.824 INFO  Stopping service [Tomcat]
+22:27:18.320 INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:27:20.676 ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field registrations in com.alibaba.edas.registry.exclude.RegistrySwitcher required a bean of type 'java.util.List' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.util.List' in your configuration.
+
+22:28:47.512 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$1be74e1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:28:47.553 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$423db8f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:28:50.153 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:28:50.262 INFO  No active profile set, falling back to default profiles: default
+22:28:51.955 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:28:52.356 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:28:53.185 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:28:54.535 INFO  BeanFactory id=949702a0-4b33-3dd1-951e-09a4191bf6d2
+22:28:56.951 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:28:56.974 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:28:57.009 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:28:58.170 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$1be74e1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:29:00.682 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:29:00.759 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:29:01.907 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:29:02.144 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:29:02.475 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:29:02.566 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:29:03.762 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$423db8f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:29:10.598 INFO  Tomcat initialized with port(s): 54216 (http)
+22:29:10.727 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:29:10.728 INFO  Starting service [Tomcat]
+22:29:10.729 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:29:11.958 INFO  Initializing Spring embedded WebApplicationContext
+22:29:11.959 INFO  Root WebApplicationContext: initialization completed in 21677 ms
+22:29:14.155 WARN  No URLs will be polled as dynamic configuration sources.
+22:29:14.155 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:29:14.211 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5d297d4d
+22:29:27.315 INFO  Initializing ExecutorService 'taskScheduler'
+22:29:41.810 DEBUG Filter 'requestLoggingFilter' configured for use
+22:29:43.190 WARN  No URLs will be polled as dynamic configuration sources.
+22:29:43.191 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:29:49.000 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:31:56.109 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$2735d38d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:31:56.116 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4d8c3e65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:31:58.778 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:31:59.430 INFO  No active profile set, falling back to default profiles: default
+22:32:02.927 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:32:03.060 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:32:03.676 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:32:08.616 INFO  BeanFactory id=949702a0-4b33-3dd1-951e-09a4191bf6d2
+22:32:13.166 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:32:13.227 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:32:13.316 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:32:14.800 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$2735d38d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:17.546 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:17.675 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:19.702 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:20.718 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:21.627 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:21.869 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:24.845 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4d8c3e65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:32:38.564 INFO  Tomcat initialized with port(s): 54216 (http)
+22:32:38.619 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:32:38.621 INFO  Starting service [Tomcat]
+22:32:38.622 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:32:41.064 INFO  Initializing Spring embedded WebApplicationContext
+22:32:41.066 INFO  Root WebApplicationContext: initialization completed in 41496 ms
+22:32:44.800 WARN  No URLs will be polled as dynamic configuration sources.
+22:32:44.808 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:32:45.040 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1eb9d69a
+22:33:26.986 INFO  Initializing ExecutorService 'taskScheduler'
+22:33:39.485 DEBUG Filter 'requestLoggingFilter' configured for use
+22:33:40.718 WARN  No URLs will be polled as dynamic configuration sources.
+22:33:40.720 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:33:51.965 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:35:25.914 INFO  Looking up function 'null' with acceptedOutputTypes: []
+22:35:36.433 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+22:35:38.767 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+22:35:39.211 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+22:35:42.212 WARN  spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+22:35:42.661 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+22:35:47.754 INFO  Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+22:35:49.371 INFO  Registering MessageChannel springCloudBusInput
+22:35:50.708 INFO  Registering MessageChannel errorChannel
+22:35:51.574 INFO  Registering MessageChannel springCloudBusOutput
+22:35:51.944 INFO  Registering MessageChannel nullChannel
+22:35:52.601 INFO  Registering MessageHandler errorLogger
+22:35:53.096 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@5923210
+22:35:56.113 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:35:56.114 INFO  Channel 'application-1.errorChannel' has 1 subscriber(s).
+22:35:56.114 INFO  started bean '_org.springframework.integration.errorLogger'
+22:35:57.119 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:35:58.070 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:35:58.071 INFO  Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+22:35:58.071 INFO  started bean 'outbound.springCloudBus'
+22:35:58.376 INFO  Setting initial instance status as: STARTING
+22:35:58.811 INFO  Initializing Eureka in region us-east-1
+22:35:59.224 INFO  Using JSON encoding codec LegacyJacksonJson
+22:35:59.225 INFO  Using JSON decoding codec LegacyJacksonJson
+22:36:00.145 INFO  Using XML encoding codec XStreamXml
+22:36:00.147 INFO  Using XML decoding codec XStreamXml
+22:36:02.032 INFO  Resolving eureka endpoints via configuration
+22:36:02.167 INFO  Disable delta property : false
+22:36:02.168 INFO  Single vip registry refresh property : null
+22:36:02.169 INFO  Force full registry fetch : false
+22:36:02.170 INFO  Application is null : false
+22:36:02.171 INFO  Registered Applications size is zero : true
+22:36:02.172 INFO  Application version is -1: true
+22:36:02.173 INFO  Getting all instance registry info from the eureka server
+22:36:07.970 INFO  The response status is 200
+22:36:07.990 INFO  Starting heartbeat executor: renew interval is: 30
+22:36:08.009 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+22:36:08.058 INFO  Discovery Client initialized at timestamp 1667918168053 with initial instances count: 0
+22:36:08.494 INFO  Registering application ACCOUNT-SERVICE with eureka with status UP
+22:36:08.498 INFO  Saw local status change event StatusChangeEvent [timestamp=1667918168498, current=UP, previous=STARTING]
+22:36:08.510 INFO  DiscoveryClient_ACCOUNT-SERVICE/192.168.31.163:account-service:54216: registering service...
+22:36:08.825 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@67201eeb
+22:36:09.227 INFO  DiscoveryClient_ACCOUNT-SERVICE/192.168.31.163:account-service:54216 - registration status: 204
+22:36:09.840 INFO  Starting ProtocolHandler ["http-nio-54216"]
+22:36:10.069 INFO  Tomcat started on port(s): 54216 (http) with context path ''
+22:36:10.105 INFO  Updating port to 54216
+22:36:15.582 INFO  Registering service with consul: NewService{id='m-192-168-31-163-account-service-54216', name='account-service', tags=[secure=false], address='192.168.31.163', meta=null, port=54216, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.31.163:54216/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+22:36:15.665 INFO  Started AccountApplication in 266.062 seconds (JVM running for 273.846)
+22:36:16.390 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:36:16.391 INFO  Initializing Servlet 'dispatcherServlet'
+22:36:17.989 INFO  Completed initialization in 1597 ms
+22:36:18.444 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:18.917 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:28.970 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:28.999 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:37.995 INFO  Disable delta property : false
+22:36:38.000 INFO  Single vip registry refresh property : null
+22:36:38.001 INFO  Force full registry fetch : false
+22:36:38.002 INFO  Application is null : false
+22:36:38.003 INFO  Registered Applications size is zero : true
+22:36:38.005 INFO  Application version is -1: false
+22:36:38.006 INFO  Getting all instance registry info from the eureka server
+22:36:38.607 INFO  The response status is 200
+22:36:39.009 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:39.098 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:49.114 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:49.286 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:59.298 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:36:59.370 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:09.396 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:09.539 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:37:12.095 INFO  Unregistering application ACCOUNT-SERVICE with eureka with status DOWN
+22:37:12.095 WARN  Saw local status change event StatusChangeEvent [timestamp=1667918232095, current=DOWN, previous=UP]
+22:37:12.096 INFO  DiscoveryClient_ACCOUNT-SERVICE/192.168.31.163:account-service:54216: registering service...
+22:37:12.118 INFO  stopped org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@67201eeb
+22:37:12.119 INFO  Removing {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:37:12.123 INFO  DiscoveryClient_ACCOUNT-SERVICE/192.168.31.163:account-service:54216 - registration status: 204
+22:37:12.126 INFO  Channel 'application-1.springCloudBusOutput' has 0 subscriber(s).
+22:37:12.127 INFO  stopped bean 'outbound.springCloudBus'
+22:37:12.128 INFO  Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:37:12.129 INFO  Channel 'application-1.errorChannel' has 0 subscriber(s).
+22:37:12.131 INFO  stopped bean '_org.springframework.integration.errorLogger'
+22:37:12.146 INFO  Deregistering service with consul: m-192-168-31-163-account-service-54216
+22:37:12.168 INFO  Shutting down ExecutorService 'catalogWatchTaskScheduler'
+22:37:12.173 INFO  Shutting down ExecutorService 'configWatchTaskScheduler'
+22:37:12.191 INFO  Shutting down ExecutorService 'applicationTaskExecutor'
+22:37:12.200 INFO  Shutting down ExecutorService 'taskScheduler'
+22:37:12.209 INFO  Summary on shutdown: bean 'springCloudBusInput'
+22:37:12.210 INFO  Summary on shutdown: bean 'errorChannel'
+22:37:12.210 INFO  Summary on shutdown: bean 'springCloudBusOutput'
+22:37:12.210 INFO  Summary on shutdown: nullChannel
+22:37:12.211 INFO  Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+22:37:12.211 INFO  Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@5923210
+22:37:12.217 INFO  Shutting down DiscoveryClient ...
+22:37:15.224 INFO  Unregistering ...
+22:37:15.260 INFO  DiscoveryClient_ACCOUNT-SERVICE/192.168.31.163:account-service:54216 - deregister  status: 200
+22:37:15.293 INFO  Completed shut down of DiscoveryClient
+22:38:00.821 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$67560f9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:00.830 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8dac7a77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:01.497 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:38:01.554 INFO  No active profile set, falling back to default profiles: default
+22:38:02.313 WARN  Endpoint ID 'migration-server-list' contains invalid characters, please migrate to a valid format.
+22:38:02.408 WARN  Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
+22:38:02.799 WARN  Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
+22:38:04.035 INFO  BeanFactory id=bee6d74c-5f00-32c0-b976-7505af68247a
+22:38:05.573 INFO  No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+22:38:05.605 INFO  No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+22:38:05.647 INFO  No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+22:38:06.414 INFO  Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$67560f9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:08.083 INFO  Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:08.196 INFO  Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:08.891 INFO  Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:09.067 INFO  Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:09.220 INFO  Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:09.278 INFO  Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:11.788 INFO  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8dac7a77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:38:22.269 INFO  Tomcat initialized with port(s): 54216 (http)
+22:38:22.381 INFO  Initializing ProtocolHandler ["http-nio-54216"]
+22:38:22.384 INFO  Starting service [Tomcat]
+22:38:22.386 INFO  Starting Servlet engine: [Apache Tomcat/9.0.27]
+22:38:23.944 INFO  Initializing Spring embedded WebApplicationContext
+22:38:23.945 INFO  Root WebApplicationContext: initialization completed in 22373 ms
+22:38:26.730 WARN  No URLs will be polled as dynamic configuration sources.
+22:38:26.731 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:38:26.817 INFO  DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@22a63740
+22:38:45.888 INFO  Initializing ExecutorService 'taskScheduler'
+22:39:07.230 DEBUG Filter 'requestLoggingFilter' configured for use
+22:39:08.047 WARN  No URLs will be polled as dynamic configuration sources.
+22:39:08.048 INFO  To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:39:12.631 INFO  Initializing ExecutorService 'applicationTaskExecutor'
+22:39:42.168 INFO  Looking up function 'null' with acceptedOutputTypes: []
+22:39:52.457 WARN  You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+22:39:57.295 INFO  Initializing ExecutorService 'configWatchTaskScheduler'
+22:39:57.902 INFO  Initializing ExecutorService 'catalogWatchTaskScheduler'
+22:40:01.455 WARN  spring-cloud-starter-eureka is deprecated as of Spring Cloud Netflix 1.4.0, please migrate to spring-cloud-starter-netflix-eureka
+22:40:01.873 INFO  Exposing 2 endpoint(s) beneath base path '/actuator'
+22:40:09.696 INFO  Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+22:40:11.551 INFO  Registering MessageChannel springCloudBusOutput
+22:40:14.949 INFO  Registering MessageChannel errorChannel
+22:40:17.256 INFO  Registering MessageChannel nullChannel
+22:40:17.687 INFO  Registering MessageChannel springCloudBusInput
+22:40:18.883 INFO  Registering MessageHandler errorLogger
+22:40:19.565 INFO  Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@73753326
+22:40:22.351 INFO  Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+22:40:22.352 INFO  Channel 'application-1.errorChannel' has 1 subscriber(s).
+22:40:22.353 INFO  started bean '_org.springframework.integration.errorLogger'
+22:40:23.387 INFO  Located property source: CompositePropertySource {name='consul', propertySources=[ConsulPropertySource {name='config/account-service/'}, ConsulPropertySource {name='config/application/'}]}
+22:40:25.319 INFO  Adding {message-handler:outbound.springCloudBus} as a subscriber to the 'springCloudBusOutput' channel
+22:40:25.320 INFO  Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+22:40:25.321 INFO  started bean 'outbound.springCloudBus'
+22:40:25.403 INFO  null No credential found
+22:40:26.229 INFO  Setting initial instance status as: STARTING
+22:40:26.285 INFO  received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@account-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1667918426262,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":17976827571680} from /127.0.0.1
+22:40:26.682 INFO  Initializing Eureka in region us-east-1
+22:40:27.319 INFO  Using JSON encoding codec LegacyJacksonJson
+22:40:27.319 INFO  Using JSON decoding codec LegacyJacksonJson
+22:40:28.222 INFO  Using XML encoding codec XStreamXml
+22:40:28.223 INFO  Using XML decoding codec XStreamXml
+22:40:30.206 INFO  Resolving eureka endpoints via configuration
+22:40:30.792 INFO  Disable delta property : false
+22:40:30.793 INFO  Single vip registry refresh property : null
+22:40:30.795 INFO  Force full registry fetch : false
+22:40:30.797 INFO  Application is null : false
+22:40:30.799 INFO  Registered Applications size is zero : true
+22:40:30.801 INFO  Application version is -1: true
+22:40:30.803 INFO  Getting all instance registry info from the eureka server
+22:40:36.412 INFO  The response status is 200
+22:40:36.430 INFO  Starting heartbeat executor: renew interval is: 30
+22:40:36.448 INFO  InstanceInfoReplicator onDemand update allowed rate per min is 4
+22:40:36.484 INFO  Discovery Client initialized at timestamp 1667918436480 with initial instances count: 0
+22:40:36.845 INFO  Registering application ACCOUNT-SERVICE with eureka with status UP
+22:40:36.849 INFO  Saw local status change event StatusChangeEvent [timestamp=1667918436849, current=UP, previous=STARTING]
+22:40:36.861 INFO  DiscoveryClient_ACCOUNT-SERVICE/192.168.31.163:account-service:54216: registering service...
+22:40:36.993 INFO  started org.springframework.cloud.consul.binder.ConsulInboundMessageProducer@2d2afbdf
+22:40:37.051 INFO  DiscoveryClient_ACCOUNT-SERVICE/192.168.31.163:account-service:54216 - registration status: 204
+22:40:37.769 INFO  Starting ProtocolHandler ["http-nio-54216"]
+22:40:37.895 INFO  Tomcat started on port(s): 54216 (http) with context path ''
+22:40:37.906 INFO  Updating port to 54216
+22:40:43.211 INFO  Registering service with consul: NewService{id='m-192-168-31-163-account-service-54216', name='account-service', tags=[secure=false], address='192.168.31.163', meta=null, port=54216, enableTagOverride=null, check=Check{script='null', interval='10s', ttl='null', http='http://192.168.31.163:54216/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null'}, checks=null}
+22:40:48.374 INFO  [BEAT] adding beat: BeatInfo{port=54216, ip='192.168.31.163', weight=1.0, serviceName='DEFAULT_GROUP@@account-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+22:40:48.383 INFO  [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@account-service with instance: Instance{instanceId='null', ip='192.168.31.163', port=54216, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+22:40:48.573 INFO  nacos registry, DEFAULT_GROUP account-service 192.168.31.163:54216 register finished
+22:40:48.975 INFO  Started AccountApplication in 171.496 seconds (JVM running for 179.187)
+22:40:49.130 INFO  received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@account-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.31.163#54216#DEFAULT#DEFAULT_GROUP@@account-service\",\"ip\":\"192.168.31.163\",\"port\":54216,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@account-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"ipDeleteTimeout\":30000,\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000}],\"lastRefTime\":1667918449122,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":17999687740082} from /127.0.0.1
+22:40:49.164 INFO  new ips(1) service: DEFAULT_GROUP@@account-service@@DEFAULT -> [{"instanceId":"192.168.31.163#54216#DEFAULT#DEFAULT_GROUP@@account-service","ip":"192.168.31.163","port":54216,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@account-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
+22:40:49.200 INFO  current ips:(1) service: DEFAULT_GROUP@@account-service@@DEFAULT -> [{"instanceId":"192.168.31.163#54216#DEFAULT#DEFAULT_GROUP@@account-service","ip":"192.168.31.163","port":54216,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@account-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000}]
+22:40:49.379 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:40:49.380 INFO  Initializing Servlet 'dispatcherServlet'
+22:40:50.150 INFO  Completed initialization in 769 ms
+22:40:50.272 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:40:50.518 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:00.553 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:00.630 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:06.433 INFO  Disable delta property : false
+22:41:06.434 INFO  Single vip registry refresh property : null
+22:41:06.435 INFO  Force full registry fetch : false
+22:41:06.436 INFO  Application is null : false
+22:41:06.443 INFO  Registered Applications size is zero : true
+22:41:06.454 INFO  Application version is -1: false
+22:41:06.458 INFO  Getting all instance registry info from the eureka server
+22:41:07.166 INFO  The response status is 200
+22:41:10.638 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:10.681 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:20.689 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:20.735 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:30.741 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:30.785 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:40.793 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:40.849 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:50.858 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:50.976 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:41:57.530 DEBUG Before request [GET /actuator/info, headers=[host:"192.168.31.163:54216", connection:"keep-alive", upgrade-insecure-requests:"1", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", referer:"http://localhost:8761/", accept-encoding:"gzip, deflate", accept-language:"zh,en;q=0.9,zh-CN;q=0.8,lb;q=0.7,zh-TW;q=0.6,gd;q=0.5"]]
+22:41:57.657 DEBUG REQ:GET /actuator/info, headers=[host:"192.168.31.163:54216", connection:"keep-alive", upgrade-insecure-requests:"1", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", referer:"http://localhost:8761/", accept-encoding:"gzip, deflate", accept-language:"zh,en;q=0.9,zh-CN;q=0.8,lb;q=0.7,zh-TW;q=0.6,gd;q=0.5"]]
+22:41:58.048 DEBUG Before request [GET /favicon.ico, headers=[host:"192.168.31.163:54216", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", accept:"image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", referer:"http://192.168.31.163:54216/actuator/info", accept-encoding:"gzip, deflate", accept-language:"zh,en;q=0.9,zh-CN;q=0.8,lb;q=0.7,zh-TW;q=0.6,gd;q=0.5"]]
+22:41:58.229 WARN  Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "favicon.ico"]
+22:41:58.235 DEBUG REQ:GET /favicon.ico, headers=[host:"192.168.31.163:54216", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", accept:"image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", referer:"http://192.168.31.163:54216/actuator/info", accept-encoding:"gzip, deflate", accept-language:"zh,en;q=0.9,zh-CN;q=0.8,lb;q=0.7,zh-TW;q=0.6,gd;q=0.5"]]
+22:42:00.992 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:01.185 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:11.193 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:11.304 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:21.322 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:21.371 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:31.392 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:31.468 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:41.479 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:41.538 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:51.549 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:42:51.620 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:01.628 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:01.686 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:11.695 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:11.752 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:21.760 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:21.803 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:31.812 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:31.857 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:41.866 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:41.911 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:51.919 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:43:51.961 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:01.970 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:02.030 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:12.043 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:12.098 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:22.106 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:22.151 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:32.160 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:32.204 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:42.211 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:42.255 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:52.323 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:44:52.368 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:02.377 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:02.450 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:12.456 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:12.506 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:22.514 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:22.578 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:30.900 INFO  Resolving eureka endpoints via configuration
+22:45:32.584 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:32.641 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:42.651 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:42.717 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:52.728 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:45:52.775 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:02.782 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:02.835 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:12.842 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:12.896 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:22.908 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:22.957 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:32.964 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:33.067 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:43.081 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:43.136 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:53.145 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:46:53.191 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:03.197 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:03.240 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:13.248 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:13.302 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:23.312 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:23.398 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:33.413 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:33.466 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:42.124 DEBUG Before request [GET /1, headers=[host:"192.168.31.163:54216", connection:"keep-alive", upgrade-insecure-requests:"1", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", accept-encoding:"gzip, deflate", accept-language:"zh,en;q=0.9,zh-CN;q=0.8,lb;q=0.7,zh-TW;q=0.6,gd;q=0.5"]]
+22:47:42.176 DEBUG REQ:GET /1, headers=[host:"192.168.31.163:54216", connection:"keep-alive", upgrade-insecure-requests:"1", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", accept:"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", accept-encoding:"gzip, deflate", accept-language:"zh,en;q=0.9,zh-CN;q=0.8,lb;q=0.7,zh-TW;q=0.6,gd;q=0.5"]]
+22:47:42.653 DEBUG Before request [GET /favicon.ico, headers=[host:"192.168.31.163:54216", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", accept:"image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", referer:"http://192.168.31.163:54216/1", accept-encoding:"gzip, deflate", accept-language:"zh,en;q=0.9,zh-CN;q=0.8,lb;q=0.7,zh-TW;q=0.6,gd;q=0.5"]]
+22:47:42.663 WARN  Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "favicon.ico"]
+22:47:42.667 DEBUG REQ:GET /favicon.ico, headers=[host:"192.168.31.163:54216", connection:"keep-alive", user-agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36", accept:"image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", referer:"http://192.168.31.163:54216/1", accept-encoding:"gzip, deflate", accept-language:"zh,en;q=0.9,zh-CN;q=0.8,lb;q=0.7,zh-TW;q=0.6,gd;q=0.5"]]
+22:47:43.475 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:43.561 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:53.573 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:47:53.755 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:03.766 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:03.807 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:13.817 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:13.863 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:23.878 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:23.935 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:33.943 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:33.987 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:44.001 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:44.220 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:54.233 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:48:54.302 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:04.312 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:04.375 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:14.401 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:14.542 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:24.556 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:24.641 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:34.650 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:34.706 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:44.716 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:44.778 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:54.790 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:49:54.832 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:04.842 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:04.885 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:14.896 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:14.979 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:24.989 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:25.059 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:30.907 INFO  Resolving eureka endpoints via configuration
+22:50:35.074 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:35.122 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:45.131 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:45.171 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:55.178 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:50:55.222 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:05.232 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:05.346 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:15.356 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:15.445 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:25.458 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:25.499 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:35.512 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:35.582 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:45.592 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:45.651 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:55.659 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:51:55.720 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:05.727 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:05.768 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:15.774 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:15.815 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:25.823 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:25.886 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:35.895 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:35.937 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:45.944 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:46.010 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:56.021 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:52:56.108 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:06.117 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:06.192 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:16.204 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:16.264 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:26.274 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:26.314 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:36.328 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:36.456 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:46.478 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:46.516 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:56.525 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:53:56.607 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:06.624 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:06.678 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:16.706 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:16.880 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:26.890 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:26.936 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:36.945 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:37.014 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:47.024 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:47.096 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:57.105 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:54:57.193 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:07.204 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:07.272 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:17.284 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:17.349 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:27.366 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:27.572 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:30.915 INFO  Resolving eureka endpoints via configuration
+22:55:37.589 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:37.684 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:47.702 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:47.785 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:57.794 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:55:57.854 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:56:07.862 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:56:07.900 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:56:17.909 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:56:17.950 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:56:27.959 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:56:28.029 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:56:38.040 DEBUG Before request [GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
+22:56:38.092 DEBUG REQ:GET /actuator/health, headers=[host:"192.168.31.163:54216", user-agent:"Consul Health Check", accept:"text/plain, text/*, */*", accept-encoding:"gzip", connection:"close"]]
